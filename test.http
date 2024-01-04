@@ -1,0 +1,17 @@
+### Test CREATE Request
+POST http://localhost:4004/catalog/getBookAction
+Authorization: Basic joe:
+Content-Type: application/json
+
+{"ID":1}
+
+
+### Validation STOCK Request
+POST http://localhost:4004/catalog/Books
+Content-Type: application/json
+
+{
+  "ID": 11,
+  "title": "The Book Title",
+  "stock": -10
+}
